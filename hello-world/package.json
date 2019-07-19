@@ -5,6 +5,7 @@
   "repository": "git@github.com:rogeralbinoi/go-wasm-studies.git",
   "author": "rogeralbinoi <roger.albino.i@gmail.com>",
   "scripts": {
+    "serve": "goexec 'http.ListenAndServe(\":8080\", http.FileServer(http.Dir(\".\")))'",
     "build:wasm": "GOOS=js GOARCH=wasm go build -o wasm/main.wasm"
   },
   "license": "MIT"
